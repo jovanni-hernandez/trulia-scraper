@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+
+  trulia:
+    build:
+      context: scraper/
+    restart: on-failure
+    tty: true
+    volumes:
+      - .client_secret.json:/root/.config/gspread/service_account.json
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
