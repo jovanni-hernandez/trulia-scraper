@@ -8,7 +8,7 @@ services:
     restart: on-failure
     tty: true
     volumes:
-      - .client_secret.json:/root/.config/gspread/service_account.json
+      - ./scraper/client_secret.json:/root/.config/gspread/service_account.json
     logging:
       driver: "json-file"
       options:
