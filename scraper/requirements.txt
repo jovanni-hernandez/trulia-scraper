@@ -1,5 +1,5 @@
 scrapy==2.1.0
 gspread==3.6.0
 pandas==1.0.4
-numpy==1.18.5
+numpy==1.22.0
 apscheduler==3.6.3
